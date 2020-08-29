@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Temperature</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body style="background-color: rgb(226, 202, 158);">
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://localhost:52330/landing.html">WeatherViz</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost:52330/landing.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:52330/comparisons.html" style="color: rgb(255, 255, 255);">Visualizations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:52330/data.html" style="color: rgb(255, 255, 255);">Data</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </nav>
+            <br>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h1 style="color: rgb(49, 58, 66);">
+                      Latitude vs. Temperature (°F)
+                    </h1>
+                    <hr style="background-color: rgb(19, 99, 202); height: 2px;">
+                  </div>
+                </div>
+                <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="http://localhost:52330/figure_1.html">
+                        <img src="resources/assets/temp_v_lat_scatter.png" href="" width="100%" height="auto">
+                    </a>
+                    <p style="font-style: italic;">
+                        Scatterplot of Latitude vs. Temperature, n = 550.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <p>
+                       It could be considered common knowledge that temperature on the surface is hotter closer to the Equator,
+                        and before this study we assumed as much. 
+                       What we ended up learning was that temperature and latitude do not a have perfect linear relationship, and in fact, 
+                       the hottest temperatures were observed closer to Tropic of Cancer (23°N). 
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                  <h1 style="color: rgb(49, 58, 66);">
+                    Northern and Southern Hemisphere, Linear Regressions
+                  </h1>
+                  <hr style="background-color: rgb(19, 99, 202); height: 2px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        Being that the equator is not a linear property, 
+                        we thought it would be best to split the data into the Northern and Southern Hemispheres.
+                        See the below visualizations for the results of our linear regressions. If we were to 
+                        do further analysis, it would be valuable to split the data at the Tropic of Cancer to see if 
+                        that raises the correlations respectively.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="http://localhost:52330/figure_1.html">
+                        <img src="resources/assets/lat_v_temp_north.png" href="" width="100%" height="auto">
+                    </a>
+                    <p style="font-style: italic;">
+                        Northern Hemisphere, Temperature vs. Latitiude | R = -0.6372
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <a href="http://localhost:52330/figure_1.html">
+                        <img src="resources/assets/lat_v_temp_south.png" href="" width="100%" height="auto">
+                    </a>
+                    <p style="font-style: italic;">
+                        Southern Hemisphere, Temperature vs. Latitiude | R = 0.8353
+                    </p>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>
